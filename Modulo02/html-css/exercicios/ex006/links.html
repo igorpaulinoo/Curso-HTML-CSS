@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::  = pseudo-element
+            >   = clildreen (filho)
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none; /*text-decoration: nnone = tira a sublinhado do link*/
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline; /*sublinha a linha assim que passa o mouse*/
+        }
+        
+        a:active {
+            color: yellow; /*quando clicar no link vai ficar amarelo*/
+        }
+
+        a::after { /*depois de todos o links*/
+            content: ' [link]'; /*depois do link aparecera a palavra [link]*/
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositorio GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo.com" target="_blank">Canal do Youtube</a></li>
+        <li><a href="htts://www.cursoemvideo.com" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

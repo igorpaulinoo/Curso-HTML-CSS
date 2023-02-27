@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>você pode acessar o meu <a href="https://github.com/igorpaulinoo" target="_blank" rel="external">repositório público no GitHub</a></p> <!-- "a" = ancora, link. / "target="_blank" = abre uma nova aba com o link -->
+    <p><a href="https://www.youtube.com/watch?v=lJvRohYSrZM" target="_blank" rel="external">Minha musica favorita no momento</a></p>
+
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+    <p>você também pode acessara nossa página <a href="noticias/pag003.html" rel="next" target="_self">página da notícia</a></p>
+    <!-- target="_blank" = _blank Abre o documento vinculado em uma nova janela ou guia. -->
+    <!-- target="_self" = _self Abre o documento vinculado no mesmo quadro em que foi clicado (este é o padrão). -->
+
+    <!-- rel="external" = Indica que o documento referenciado não faz parte do mesmo site que o documento atual. -->
+    <!-- rel="next" = Fornece um link para o próximo documento da série. -->
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
