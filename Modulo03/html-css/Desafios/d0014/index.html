@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        thead > tr > th {
+            background-color: gray;
+            color: white;
+        }
+
+        th, tr, td {
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        .media {
+            background-color: gray;
+            text-align: left;
+            
+        }
+
+        .resul-nota {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- O scopeatributo especifica se uma célula de cabeçalho é um cabeçalho para uma coluna, linha ou grupo de colunas ou linhas. 
+    col = Especifica que a célula é um cabeçalho para uma coluna
+    row = Especifica que a célula é um cabeçalho para uma linha
+    colgroup = Especifica que a célula é um cabeçalho para um grupo de colunas
+    rowgroup = Especifica que a célula é um cabeçalho para um grupo de linhas
+
+    -->   
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplina</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" class="sub">Exatas</th>
+                <td>Matemática</td>
+                <td class="resul-nota">0.0</td>
+                <td class="resul-nota">0.0</td>
+                <td class="resul-nota">0.0</td>
+            </tr>
+
+            <tr>
+                <td>Física</td>
+                <td class="resul-nota">0.0</td>
+                <td class="resul-nota">0.0</td>
+                <td class="resul-nota">0.0</td>
+            </tr>
+
+            <tr>
+                <td>Química</td>
+                <td class="resul-nota">0.0</td>
+                <td class="resul-nota">0.0</td>
+                <td class="resul-nota">0.0</td>
+            </tr>
+
+            <tr>
+                <td>Biologia</td>
+                <td class="resul-nota">0.0</td>
+                <td class="resul-nota">0.0</td>
+                <td class="resul-nota">0.0</td>
+            </tr>
+
+            <tr class="media">
+                <th colspan="4">Média de Exatas</th>
+                <td class="resul-nota">0.0</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="resul-nota">0.0</td>
+                <td class="resul-nota">0.0</td>
+                <td class="resul-nota">0.0</td>
+            </tr>
+
+            <tr>
+                <td>Geografia</td>
+                <td class="resul-nota">0.0</td>
+                <td class="resul-nota">0.0</td>
+                <td class="resul-nota">0.0</td>
+            </tr>
+
+            <tr class="media">
+                <th colspan="4">Média de Humanas</th>
+                <td class="resul-nota">0.0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+</body>
+</html>
