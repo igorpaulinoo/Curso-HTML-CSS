@@ -5,11 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe</title>
+    <style>
+        iframe {
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    <h1>Testando o uso de um iframe</h1>
-    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe> para aprender a programar.</p>
 
-    <p>O site do <iframe src="https://google.com.br" frameborder="0"></iframe> também é muito legal</p>
+    <!-- tamanho padrão dos iframe 300x150 -->
+    <h1>Testando o uso de um iframe</h1>
+    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500px" scolling="no"><a href="https://wwww.cursoemvideo.com" target="_blank"></a>Curso em Video</iframe> para aprender a programar.</p>
+
+    <!--
+        scolling = auto / padrão 
+        scolling = yes / mesmo que o conteudo couber no iframe ele cria uma barra de rolagem  
+        scolling = auto / mesmo que o conteudo for maior ele nõa deixa "rolar a página "
+    -->
+
+    <p>O meu projeto android <iframe src="https://igorpaulinoo.github.io/projeto-android/" frameborder="0" height="500px" width="500px"><a href="https://igorpaulinoo.github.io/projeto-android/" target="_blank">Meu projeto android</a></iframe></p>
+
 </body>
 </html>
