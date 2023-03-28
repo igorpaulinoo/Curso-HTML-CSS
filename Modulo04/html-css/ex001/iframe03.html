@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        } 
+    </style>
+</head>
+<body>
+    
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nisi quaerat ducimus minima quam autem esse iure quo dolore dolores debitis, odit pariatur deserunt, officia dignissimos nulla perspiciatis corporis ipsum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsum adipisci natus exercitationem enim aut libero dicta eius? Labore, iure nostrum voluptatibus temporibus a necessitatibus officia beatae ipsa deserunt! Fugit.</p>
+
+    <!-- 
+        chamando um página dentro do iframe, colocando um "name" na tag iframe e chamndo o "name" no link: target="frame"
+    -->
+    <ul>
+        <li><a href="paginas/pagina01.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas/pagina02.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas/pagina03.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nam pariatur, repudiandae ipsam aliquid incidunt, possimus placeat non unde saepe cum. Et vero modi provident ipsa a, vel quo debitis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab est dolore illum eum eligendi consectetur dolorem ex perspiciatis odit ratione consequuntur, hic velit voluptatem ad autem iste quas quia soluta.</p>
+
+    <!-- "srcdoc" usado para colocar cogigo basico em HTML dentro da tag "iframe"-->
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis eaque soluta numquam, veniam iure voluptas quam sunt laborum, fuga, cupiditate dolorem vel voluptatem minima quia dignissimos. Vitae placeat suscipit in.</p><img src='imagens/cursoemvideo.png'>">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quas vero recusandae sequi, saepe dolor accusantium obcaecati voluptatum debitis, animi consequatur tenetur eaque cum ex, enim aspernatur vitae sit deserunt! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut earum, sunt asperiores magni ex eligendi? Magni, tempora, assumenda harum aperiam temporibus eligendi accusamus veniam consequuntur quidem cumque itaque ut ad.</p>
+
+</body>
+</html>
